@@ -7,13 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <title>@yield('title')</title>
+
     @vite(['resources/scss/app.scss', 'resources/js/app.js'])
 
 
 </head>
 
 <body>
+
+
+
     @yield('homeContent')
+
+
 </body>
 
 </html>

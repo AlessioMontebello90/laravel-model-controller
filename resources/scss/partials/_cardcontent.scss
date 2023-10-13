@@ -12,12 +12,14 @@ body {
         &:hover {
             .hover {
                 display: flex !important;
+            }
         }
 
         img {
             height: 350px;
             aspect-ratio: 1/1;
         }
+
         .hover {
             display: none !important;
             padding: 2rem;
