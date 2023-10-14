@@ -3,19 +3,18 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
-use App\Models\Movie;
 use Illuminate\Http\Request;
+use App\Models\Movie;
 
 class PageController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
-        $movies = Movie::all();
+        $dati = Movie::all();
 
-
-
-        return view('home', compact('movies'));
+        return view('home', ['movies'=>$dati]);
     }
 
-   
+    
 }
